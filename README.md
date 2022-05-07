@@ -1,2 +1,2 @@
 # CLOCK
-![](clock24.png)
+![](clock_24.png)
