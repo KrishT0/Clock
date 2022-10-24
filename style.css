@@ -55,9 +55,12 @@ body.light .clock{
     border-radius: 50%;
     z-index: 10000;
 }
+
+
 body.light .clock::before {
     background: rgb(0, 142, 255);
 }
+
 
 .clock .hour,
 .clock .min,
@@ -66,10 +69,12 @@ body.light .clock::before {
     position: absolute;
 }
 
+
 .clock .hour, .hr{
     width: 160px;
     height: 160px;
 }
+
 
 .clock  .min, .mn{
     width: 190px;
