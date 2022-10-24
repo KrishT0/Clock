@@ -1,23 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:rgb(9, 25, 33);
+    background: rgb(9, 25, 33);
 }
 
-body.light{
+body.light {
     background: rgb(209, 218, 227);
 }
 
 
-.clock{
+.clock {
     width: 350px;
     height: 350px;
     display: flex;
@@ -28,25 +28,25 @@ body.light{
     border: 6px solid rgb(9, 25, 33);
     border-radius: 50%;
     box-shadow: 0 -15px 15px rgba(225, 225, 225, 0.05),
-                inset 0  -15px 15px rgba(0, 0, 0,0.3),
-                0  15px 15px rgba(225,225, 225, 0.05),
-                inset 0  15px 15px rgba(0, 0, 0,0.3);
-     
+        inset 0 -15px 15px rgba(0, 0, 0, 0.3),
+        0 15px 15px rgba(225, 225, 225, 0.05),
+        inset 0 15px 15px rgba(0, 0, 0, 0.3);
+
 }
 
 
-body.light .clock{
+body.light .clock {
     background: url(./clock.png);
     background-size: cover;
     border: 6px solid rgb(202, 211, 220);
-    box-shadow: -8 -8px 15px rgba(255, 255, 255,0.5),
-                inset 0  -15px 15px rgba(0, 0, 0,0.3),
-                10  10px 10px rgba(255, 255, 255,0.5),
-                inset 0  15px 15px rgba(0, 0, 0,0.3);
+    box-shadow: -8 -8px 15px rgba(255, 255, 255, 0.5),
+        inset 0 -15px 15px rgba(0, 0, 0, 0.3),
+        10 10px 10px rgba(255, 255, 255, 0.5),
+        inset 0 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 
-.clock::before{
+.clock::before {
     content: '';
     position: absolute;
     width: 15px;
@@ -64,38 +64,44 @@ body.light .clock::before {
 
 .clock .hour,
 .clock .min,
-.clock .sec
-{
+.clock .sec {
     position: absolute;
 }
 
 
-.clock .hour, .hr{
+.clock .hour,
+.hr {
     width: 160px;
     height: 160px;
 }
 
 
-.clock  .min, .mn{
+.clock .min,
+.mn {
     width: 190px;
     height: 190px;
 }
-.clock  .sec, .sc{
+
+
+.clock .sec,
+.sc {
     width: 230px;
     height: 230px;
 }
 
-.hr,.mn,.sc
-{
+
+.hr,
+.mn,
+.sc {
     display: flex;
     justify-content: center;
     position: absolute;
 }
 
-.hr::before
-{
+
+.hr::before {
     content: '';
-    position:absolute;
+    position: absolute;
     width: 10px;
     height: 80px;
     background: red;
@@ -103,10 +109,10 @@ body.light .clock::before {
     border-radius: 6px 6px 0 0;
 }
 
-.mn::before
-{
+
+.mn::before {
     content: '';
-    position:absolute;
+    position: absolute;
     width: 5px;
     height: 90px;
     background: white;
@@ -114,15 +120,15 @@ body.light .clock::before {
     border-radius: 6px 6px 0 0;
 }
 
-body.light .mn::before
-{
+
+body.light .mn::before {
     background: rgb(9, 25, 33);
 }
 
-.sc::before
-{
+
+.sc::before {
     content: '';
-    position:absolute;
+    position: absolute;
     width: 3px;
     height: 150px;
     background: rgb(0, 142, 255);
@@ -130,8 +136,9 @@ body.light .mn::before
     border-radius: 6px 6px 0 0;
 }
 
-.toggle{
-    position:absolute;
+
+.toggle {
+    position: absolute;
     top: 30px;
     right: 150px;
     width: 20px;
@@ -139,7 +146,7 @@ body.light .mn::before
     font-size: 18px;
     border-radius: 50%;
     background: rgb(209, 218, 227);
-    color:rgb(209, 218, 227) ;
+    color: rgb(209, 218, 227);
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
     transition: 0.5s;
@@ -147,14 +154,16 @@ body.light .mn::before
     align-items: center;
 }
 
-.toggle:before{
-position:absolute;
-content: 'Light Mode';
-left: 25px;
-white-space: nowrap;
+
+.toggle:before {
+    position: absolute;
+    content: 'Light Mode';
+    left: 25px;
+    white-space: nowrap;
 }
 
-.toggleClass{
+
+.toggleClass {
     position: absolute;
     top: 30px;
     right: 150px;
@@ -170,20 +179,22 @@ white-space: nowrap;
     align-items: center;
 }
 
-.toggleClass:before{
-    position:absolute;
+
+.toggleClass:before {
+    position: absolute;
     left: 25px;
     content: 'Light Mode';
     white-space: nowrap;
 }
 
-body.light .toggleClass{
+
+body.light .toggleClass {
     background: rgb(9, 25, 33);
-    color:rgb(9, 25, 33) ;
-    
+    color: rgb(9, 25, 33);
+
 }
 
-body.light .toggleClass::before{
-content: 'Dark Mode';
-    
+
+body.light .toggleClass::before {
+    content: 'Dark Mode';
 }
