@@ -19,3 +19,4 @@ setInterval(() => {
     sc.style.transform = `rotateZ(${ss}deg)`;
 
 })
+
